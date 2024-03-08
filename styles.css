@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Gabarito", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #eff0f3;
+}
+
+header{
+    background-color: #fffe;
+    width:100%;
+    height: 120px;
+    border-bottom: 5px solid #0d0d0d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 160px;
+}
+
+.logo{
+    font-size: 42px;
+    text-shadow: -5px 5px #0d0d0d28;;
+}
+
+nav{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.social-wrapper-dark{
+    display: hidden;
+}
+
+.apresentacao{
+    position: relative;
+    height: 725px;
+    padding: 0 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 5px solid #0d0d0d;
+}
+
+.photo-wrapper{
+    position: relative;
+    min-height: 300px;
+    min-width: 300px;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    border:  5px solid #0d0d0d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff593c;
+    box-shadow: -20px 20px #0d0d0d28;
+}
+
+.photo{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border: 5px solid #0d0d0d;
+    border-radius: 50%;
+}
+
+.text-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85ch;
+    text-align: center;
+}
+
+.text-title{
+    font-size: 42px;
+    font-weight: 600;
+    color: #0d0d0d;
+}
+
+.text-paragraph{
+    font-size: 24px;
+    font-weight: 400;
+    color: #2a2a2a;
+}
+
+.tech-wrapper{
+    width:60ch;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tech-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #fffe;
+    cursor: pointer;
+}
+
+.tech-card:hover{
+    background-color:#dfe0e4;
+}
+
+.card-title{
+    font-size: 20px;
+}
+
+.down-arrow{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    animation: 0.8s infinite alternate float;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+@keyframes float {
+    from {
+      transform: translateY(0%);
+    }
+  
+    to {
+      transform: translateY(-30%);
+    }
+  }
+
+.arrow-icon{
+    width: 80px;
+    height: 80px;
+    transform: translate(-50%, -50%);
+}
+
+.projects{
+    padding: 100px 200px 0px 200px;
+    background-color: #fffe;
+    text-align: center;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.projects-section-title{
+    font-size: 42px;
+}
+
+.project-container{
+    display: flex;
+    align-items: center;
+    gap:32px;
+    padding-bottom: 92px;
+    padding-top: 92px;
+    border-bottom: 5px solid #0d0d0d28;
+}
+
+.project-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:32px;
+}
+
+.project-title{
+    font-size: 36px;
+}
+
+.project-paragraph{
+    font-size: 24px;
+    font-weight: 400;
+    color: #2a2a2a;
+}
+
+.gif-container{
+    width: 540px;
+    height: 310px;
+}
+
+.project-gif{
+    width: 540px;
+    height: 310px;
+    border: 5px solid #0d0d0d;;
+    box-shadow: -20px 20px #0d0d0d28;
+    transition: 0.2s transform;
+}
+
+.project-gif:hover{
+    transform: scale(1.02);
+}
+
+.project-button{
+    background-color: #ff593c;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fffe;
+    box-shadow: -8px 8px #0d0d0d28;
+    outline: none;
+    border: none;
+    width:180px;
+    height:50px;
+    transition: 0.2s transform;
+    cursor: pointer;
+    padding: 12px 0;
+}
+
+.project-button:hover{
+    transform: scale(1.1);
+}
+
+.contatos{
+    width: 100%;
+    height:400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:30px;
+    padding: 0 160px;
+    border-top: 5px solid #0d0d0d28;
+}
+
+.contatos h2{
+    font-size: 48px;
+}
+
+.linkedin-image-container{
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+
+footer{
+    background-color: #fffe;
+    height: 220px;
+    border-top: 5px solid #0d0d0d28;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 160px;
+    gap:24px;
+}
+
+.gmail-wrapper,.linkedin-wrapper{
+    display:flex;
+    align-items: center;
+    gap:30px;
+}
