@@ -53,8 +53,9 @@ nav{
     padding: 0 200px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     border-bottom: 5px solid #0d0d0d;
+    gap:5%
 }
 
 .photo-wrapper{
@@ -155,7 +156,7 @@ nav{
 }
 
 .projects{
-    padding: 100px 200px 0px 200px;
+    padding: 100px 16% 0px 16%;
     background-color: #fffe;
     text-align: center;
     display: flex;
@@ -170,13 +171,19 @@ nav{
 .project-container{
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     gap:32px;
     padding-bottom: 92px;
     padding-top: 92px;
     border-bottom: 5px solid #0d0d0d28;
 }
 
+.no-border{
+    border:none;
+}
+
 .project-info{
+    width:45%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -188,6 +195,7 @@ nav{
 }
 
 .project-paragraph{
+    width:70%;
     font-size: 24px;
     font-weight: 400;
     color: #2a2a2a;
